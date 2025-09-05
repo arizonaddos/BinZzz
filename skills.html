@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Skills — MacOS Style</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #0f0b16;
+      color: #fff;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    .window {
+      margin: 30px;
+      background: #1b1a1f;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.7);
+    }
+
+    .titlebar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+    .dot {width:14px;height:14px;border-radius:50%}
+    .d1{background:#ff5f56}
+    .d2{background:#ffbd2e}
+    .d3{background:#27c93f}
+
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      color: #ff7fbf;
+      text-shadow: 0 0 10px #ff61a8;
+      margin-bottom: 20px;
+    }
+    .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+    .skill {
+      flex: 0 0 220px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 18px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    }
+
+    .skill img {
+      width: 36px;
+      height: 36px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .skill h3 {
+      margin: 6px 0;
+      font-size: 16px;
+      color: #ffd9ef;
+    }
+    .bar {
+      background: #333;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 10px;
+      margin: 8px 0;
+    }
+    .bar div {
+      height: 100%;
+      background: linear-gradient(90deg,#ff7fbf,#ff61a8);
+      width: 0;
+      animation: fillBar 2s forwards;
+    }
+
+    .percent {
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffb6e6;
+      animation: blink 1.2s infinite;
+    }
+
+    @keyframes fillBar {
+      from {width: 0;}
+      to {width: var(--val);}
+    }
+
+    @keyframes blink {
+      0%, 50% {opacity: 1;}
+      51%, 100% {opacity: 0.6;}
+    }
+  </style>
+</head>
+<body>
+  <div class="window">
+    <div class="titlebar">
+      <div class="dot d1"></div>
+      <div class="dot d2"></div>
+      <div class="dot d3"></div>
+    </div>
+    <h1>⚡SKILL</h1>
+
+    <div class="skills-container">
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+        <h3>C++</h3>
+        <div class="bar"><div style="--val:85%"></div></div>
+        <span class="percent">85%</span>
+      </div>
+
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        <h3>Java</h3>
+        <div class="bar"><div style="--val:70%"></div></div>
+        <span class="percent">70%</span>
+      </div>
+
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <h3>HTML</h3>
+        <div class="bar"><div style="--val:95%"></div></div>
+        <span class="percent">95%</span>
+      </div>
+
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua">
+        <h3>Lua</h3>
+        <div class="bar"><div style="--val:60%"></div></div>
+        <span class="percent">60%</span>
+      </div>
+
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <h3>Python</h3>
+        <div class="bar"><div style="--val:90%"></div></div>
+        <span class="percent">90%</span>
+      </div>
+
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <h3>JavaScript</h3>
+        <div class="bar"><div style="--val:88%"></div></div>
+        <span class="percent">88%</span>
+      </div>
+
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go">
+        <h3>Go</h3>
+        <div class="bar"><div style="--val:50%"></div></div>
+        <span class="percent">50%</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
